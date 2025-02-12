@@ -1,0 +1,47 @@
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.characterCard {
+    background: linear-gradient(135deg, #ff0000, #8b0000);
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    height: 300px;
+    margin: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.characterImage {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.characterCard:hover {
+    transform: scale(1.05);
+}
+
+.characterName {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 15px 15px;
+}

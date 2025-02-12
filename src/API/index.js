@@ -24,4 +24,12 @@ export const marvelAPI = {
             params: { ts, apikey: publicKey, hash },
         });
     },
+    getComicsByCharacterId(characterId) {
+        return instance.get(`characters/${characterId}/comics`, {
+            params: { ts, apikey: publicKey, hash },
+        });
+    }
+    
+       
+
 };

@@ -1,17 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from "./CharacterCard.module.css";
 
 const CharacterCard = ({ character }) => {
-    const { name, thumbnail } = character;
+    const { name, id, thumbnail } = character;
     const imageUrl = `${thumbnail.path}.${thumbnail.extension}`;
 
     return (
-        <Link to={`/character/${name}`}>
-            <div className="character-card">
-                <img src={imageUrl} alt={name} />
-                <h2>{name}</h2>
-            </div>
-        </Link>
+        <div className={styles.characterCard}>
+            <Link to={`/comics/${id}?name=${name}`} className={styles.cardLink}>
+                <div className={styles.imageContainer}>
+                    <img src={imageUrl} alt={name} className={styles.characterImage} />
+                </div>
+                <h2 className={styles.characterName}>{name}</h2>
+            </Link>
+
+        </div>
     );
 };
 

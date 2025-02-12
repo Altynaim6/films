@@ -1,0 +1,57 @@
+.charactersContainer {
+    max-width: 100%;
+    background-image: url('../../assets/img/marvel-heroes-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+.title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    border: 5px solid #f52727;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.charactersGrid {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
