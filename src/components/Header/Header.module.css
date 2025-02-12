@@ -1,0 +1,61 @@
+.header {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #e62429;
+    position: relative;
+}
+
+.marvelLogo {
+    position: absolute;
+    left: 5%;
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #111;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 2px solid #e62429;
+}
+
+.searchInput {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #222;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchInput::placeholder {
+    color: #aaa;
+}
+
+.searchInput:focus {
+    width: 300px;
+    background-color: #333;
+}
+
+.buttonMarvel {
+    background-color: #e62429;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonMarvel:hover {
+    background-color: #c51d23;
+}
